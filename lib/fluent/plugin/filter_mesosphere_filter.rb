@@ -33,7 +33,7 @@ module Fluent
                  default: '^(?<app>[a-z0-9]([-a-z0-9.]*[a-z0-9]))-(?<task_type>[^-]+)-(?<run>[^-]+)-(?<epoc>[^-]+)$'
     config_param :marathon_app_regex,
                  :string,
-                 default: '\/(?<app>[a-z0-9]([-a-z0-9_.]*[a-z0-9_.]))'
+                 default: '\/(?<app>[a-z0-9]([-a-z0-9_.]*[a-z0-9_.]))$'
 
     # Get the configuration for the plugin
     def configure(conf)
